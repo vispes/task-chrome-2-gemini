@@ -1,0 +1,1 @@
+An error occurred while calling Gemini: Cannot read properties of undefined (reading 'map')
