@@ -1,0 +1,53 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Marketing Productivity Extension Options</title>
+    <link rel="stylesheet" href="options.css">
+</head>
+<body>
+    <div class="options-container">
+        <h1>Extension Settings</h1>
+
+        <div class="options-section">
+            <h2>General Settings</h2>
+            <div class="form-group">
+                <label for="defaultTaskListName">Default Task List Name:</label>
+                <input type="text" id="defaultTaskListName" placeholder="e.g., My Marketing Tasks">
+            </div>
+
+            <div class="form-group">
+                <label>
+                    <input type="checkbox" id="enableNotifications">
+                    Enable Desktop Notifications
+                </label>
+            </div>
+        </div>
+
+        <div class="options-section">
+            <h2>Theme Settings</h2>
+            <div class="form-group">
+                <label for="themeSelect">Select Theme:</label>
+                <select id="themeSelect">
+                    <option value="default">Default</option>
+                    <option value="dark">Dark Mode</option>
+                    <option value="light">Light Mode</option>
+                    <option value="blue">Blue Theme</option>
+                    <option value="green">Green Theme</option>
+                </select>
+            </div>
+            <div id="themePreview" class="theme-preview">
+                <!-- Theme preview content will be dynamically updated by options.js -->
+                This is a theme preview.
+            </div>
+        </div>
+
+        <div class="button-group">
+            <button id="saveButton">Save Settings</button>
+        </div>
+
+        <div id="saveMessage" class="status-message"></div>
+    </div>
+
+    <script src="options.js"></script>
+</body>
+</html>
