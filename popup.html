@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="appTitle">Marketing Productivity Hub</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="popup-container">
+        <h1 data-i18n="hubTitle">Productivity Hub</h1>
+
+        <nav class="popup-nav">
+            <button id="nav-tasks" class="nav-tab active" data-i18n="tabTasks">Tasks</button>
+            <button id="nav-notes" class="nav-tab" data-i18n="tabNotes">Notes</button>
+            <button id="nav-youtube" class="nav-tab" data-i18n="tabYoutube">YouTube</button>
+        </nav>
+
+        <div class="section" id="tasks-section">
+            <h2 data-i18n="taskManagementTitle">Task Management</h2>
+            <form id="task-form">
+                <label for="task-input" data-i18n="taskInputLabel" class="sr-only">New Task:</label>
+                <input type="text" id="task-input" placeholder="Add a new task...">
+                <button id="add-task-btn" type="submit" data-i18n="addTaskButton">Add Task</button>
+            </form>
+            <ul id="task-list">
+                <!-- Tasks will be dynamically loaded here -->
+            </ul>
+        </div>
+
+        <div class="section" id="notes-section">
+            <h2 data-i18n="notesTitle">Rich Text Notes</h2>
+            <form id="note-form">
+                <label for="note-content-editor" data-i18n="noteEditorLabel" class="sr-only">Note Editor:</label>
+                <div id="note-content-editor">
+                    <!-- Rich text editor will be initialized here -->
+                </div>
+                <button id="save-note-btn" type="submit" data-i18n="saveNoteButton">Save Note</button>
+            </form>
+        </div>
+
+        <div class="section" id="youtube-section">
+            <h2 data-i18n="youtubeTitle">YouTube Learning</h2>
+            <form id="youtube-embed-form">
+                <label for="youtube-url-input" data-i18n="youtubeUrlInputLabel" class="sr-only">YouTube URL:</label>
+                <input type="text" id="youtube-url-input" placeholder="Enter YouTube URL...">
+                <button id="load-youtube-btn" type="submit" data-i18n="loadVideoButton">Load Video</button>
+            </form>
+            <div id="youtube-videos-container">
+                <!-- YouTube iframe will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
