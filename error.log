@@ -1,0 +1,3 @@
+# This is the error log file for the Chrome Extension.
+# Errors encountered during operation will be appended here.
+# Format: [TIMESTAMP] [LOG_LEVEL] [COMPONENT] [MESSAGE] [STACK_TRACE (optional)]
