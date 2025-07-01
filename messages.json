@@ -1,0 +1,150 @@
+{
+  "extensionName": {
+    "message": "Marketing Productivity Hub",
+    "description": "The name of the extension."
+  },
+  "extensionDescription": {
+    "message": "Enhance marketing productivity with centralized task management, rich text notes, and YouTube integration.",
+    "description": "The description of the extension."
+  },
+  "navTasks": {
+    "message": "Tasks",
+    "description": "Label for the navigation tab or section for tasks."
+  },
+  "navNotes": {
+    "message": "Notes",
+    "description": "Label for the navigation tab or section for notes."
+  },
+  "navYouTube": {
+    "message": "YouTube",
+    "description": "Label for the navigation tab or section for YouTube videos."
+  },
+  "navSettings": {
+    "message": "Settings",
+    "description": "Label for the navigation tab or section for settings."
+  },
+  "addTaskButton": {
+    "message": "Add Task",
+    "description": "Label for the button to add a new task."
+  },
+  "taskTitlePlaceholder": {
+    "message": "Enter task title...",
+    "description": "Placeholder text for the task title input field."
+  },
+  "taskDescriptionPlaceholder": {
+    "message": "Enter task description...",
+    "description": "Placeholder text for the task description input field."
+  },
+  "taskDueDateLabel": {
+    "message": "Due Date:",
+    "description": "Label for the task due date input field."
+  },
+  "markTaskCompleteButton": {
+    "message": "Mark Complete",
+    "description": "Label for the button to mark a task as complete."
+  },
+  "editTaskButton": {
+    "message": "Edit Task",
+    "description": "Label for the button to edit an existing task."
+  },
+  "deleteTaskButton": {
+    "message": "Delete Task",
+    "description": "Label for the button to delete a task."
+  },
+  "addSubtaskButton": {
+    "message": "Add Subtask",
+    "description": "Label for the button to add a subtask."
+  },
+  "taskDetailsLabel": {
+    "message": "Task Details",
+    "description": "Heading or label for a section displaying task details."
+  },
+  "newNoteButton": {
+    "message": "New Note",
+    "description": "Label for the button to create a new note."
+  },
+  "saveNoteButton": {
+    "message": "Save Note",
+    "description": "Label for the button to save a note."
+  },
+  "editNoteButton": {
+    "message": "Edit Note",
+    "description": "Label for the button to edit an existing note."
+  },
+  "deleteNoteButton": {
+    "message": "Delete Note",
+    "description": "Label for the button to delete a note."
+  },
+  "noteTitlePlaceholder": {
+    "message": "Enter note title...",
+    "description": "Placeholder text for the note title input field."
+  },
+  "notesPlaceholder": {
+    "message": "Start typing your notes here...",
+    "description": "Placeholder text for the notes rich text editor."
+  },
+  "addYouTubeVideo": {
+    "message": "Add YouTube Video",
+    "description": "Label for the button to add a YouTube video."
+  },
+  "youtubeLinkPlaceholder": {
+    "message": "Paste YouTube link here...",
+    "description": "Placeholder text for the YouTube link input field."
+  },
+  "settingsPageTitle": {
+    "message": "Extension Settings",
+    "description": "Title for the extension settings page."
+  },
+  "themeLabel": {
+    "message": "Theme:",
+    "description": "Label for the theme selection setting."
+  },
+  "defaultViewLabel": {
+    "message": "Default View:",
+    "description": "Label for the setting to choose the default view/tab on extension open."
+  },
+  "saveSettingsButton": {
+    "message": "Save Settings",
+    "description": "Label for the button to save user settings."
+  },
+  "taskAddedSuccess": {
+    "message": "Task added successfully!",
+    "description": "Notification message when a task is successfully added."
+  },
+  "taskCompleteSuccess": {
+    "message": "Task marked as complete!",
+    "description": "Notification message when a task is successfully marked complete."
+  },
+  "taskDeletedSuccess": {
+    "message": "Task deleted.",
+    "description": "Notification message when a task is successfully deleted."
+  },
+  "noteSavedSuccess": {
+    "message": "Note saved successfully!",
+    "description": "Notification message when a note is successfully saved."
+  },
+  "noteDeletedSuccess": {
+    "message": "Note deleted.",
+    "description": "Notification message when a note is successfully deleted."
+  },
+  "videoAddedSuccess": {
+    "message": "YouTube video added.",
+    "description": "Notification message when a YouTube video is successfully added/embedded."
+  },
+  "settingsSavedSuccess": {
+    "message": "Settings saved.",
+    "description": "Notification message when settings are successfully saved."
+  },
+  "loadingMessage": {
+    "message": "Loading...",
+    "description": "Generic message indicating content is loading."
+  },
+  "genericErrorMessage": {
+    "message": "An error occurred. Please try again.",
+    "description": "Generic error message for various failures."
+  },
+  "invalidYouTubeLinkError": {
+    "message": "Invalid YouTube link. Please enter a valid URL.",
+    "description": "Error message for an invalid YouTube link input."
+  }
+}
