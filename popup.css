@@ -1,0 +1,171 @@
+/* Basic Reset and Global Styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-size: 0.875rem; /* Changed from 14px to rem for accessibility */
+    background-color: #f8f9fa; /* Light background */
+    color: #333;
+    width: 380px; /* Standard popup width, adjust as needed */
+    min-height: 400px; /* Minimum height, can expand */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Main Popup Container */
+.container { /* Changed from .popup-container to .container to match HTML */
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 15px; /* Space between sections */
+    height: 100%;
+    /* box-sizing: border-box; Removed redundant box-sizing as it's global */
+}
+
+/* Section Styling (e.g., for Task, Notes, YouTube) */
+.section {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    flex-shrink: 0; /* Prevents sections from shrinking if content is too large */
+}
+
+.section h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    color: #2c3e50;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 10px;
+}
+
+/* Common Form Elements */
+input[type="text"],
+input[type="url"],
+textarea {
+    width: 100%; /* Changed from calc(100% - 20px) due to box-sizing: border-box */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="url"]:focus,
+textarea:focus {
+    border-color: #007bff; /* Primary focus color */
+    outline: none; /* Removed for accessibility */
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Added for better focus indication */
+}
+
+button {
+    background-color: #007bff; /* Primary button color */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+button:active {
+    background-color: #004085;
+}
+
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+/* Specific elements based on project description */
+
+/* Task Management */
+.task-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.task-item:last-child {
+    border-bottom: none;
+}
+
+.task-item input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2); /* Make checkbox slightly larger */
+    cursor: pointer;
+}
+
+.task-item.completed label {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.task-item label {
+    flex-grow: 1;
+    cursor: pointer;
+    user-select: none; /* Prevent text selection on label click */
+}
+
+/* Rich Text Notes (placeholder for a WYSIWYG editor or advanced textarea) */
+.note-editor {
+    min-height: 120px;
+    resize: vertical;
+    width: 100%; /* Override parent calc if needed */
+    box-sizing: border-box;
+}
+
+/* YouTube Integration */
+.youtube-player-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    background-color: #000;
+    border-radius: 4px;
+    margin-top: 10px; /* Space above the player */
+}
+
+.youtube-player-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.youtube-url-input-group {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 10px; /* Space below the input group */
+    align-items: center;
+}
+
+.youtube-url-input-group input {
+    flex-grow: 1;
+    margin-bottom: 0; /* Override default margin for inputs within this group */
+}
+
+.youtube-url-input-group button {
+    flex-shrink: 0; /* Prevent button from shrinking */
+    padding: 10px 12px;
+}
